@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Circle Animation</title>
+        <style>
+            body{
+                margin: 100px;
+                padding: 100px;
+            }
+            .circle1{
+                margin-left: 350px;
+                padding: 10px;
+                padding-right: 10px; /*move-right */
+                width: 40px;
+                height: 40px;
+                display: flex;
+                background-color: rgb(233, 81, 16);
+                border-radius: 100px;
+                animation-name: circle1;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+            .circle2{
+                margin-left: 350px;
+                margin-top: 90px;
+                padding: 10px;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                background-color: rgb(64, 70, 34);
+                border-radius: 100px;
+                animation-name: circle2;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+            .circle3{
+                margin-top: -210px;
+                margin-left: 500px;
+                padding: 10px;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                background-color: rgb(198, 250, 78);
+                border-radius: 100px;
+                animation-name: circle3;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+            .circle4{
+                margin-top: 91px;
+                margin-left: 500px;
+                padding: 10px;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                background-color: rgb(92, 169, 241);
+                border-radius: 100px;
+                animation-name: circle4;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+            #c1{
+                margin-left: 350px;
+                padding: 10px;
+                padding-right: 10px; /*move-right */
+                width: 40px;
+                height: 40px;
+                display: flex;
+                background-color: rgb(233, 81, 16);
+                border-radius: 100px;
+            }
+            #c2{
+                margin-left: 350px;
+                margin-top: 90px;
+                padding: 10px;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                background-color: rgb(64, 70, 34);
+                border-radius: 100px;
+            }
+            #c3{
+                margin-top: -210px;
+                margin-left: 500px;
+                padding: 10px;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                background-color: rgb(198, 250, 78);
+                border-radius: 100px;
+            }
+            #c4{
+                margin-top: 91px;
+                margin-left: 500px;
+                padding: 10px;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                background-color: rgb(92, 169, 241);
+                border-radius: 100px;
+            }
+
+            .btn{
+                text-align: center;
+                padding-left: 50px;
+                margin-top: 50px;
+            }
+            .btn button{
+                width: 100px;
+                height: 30px;
+            }
+            .btn button:nth-child(1){
+                font-size: medium;
+                background-color: rgb(70, 72, 75);
+                color: white;
+            }
+            .btn button:nth-child(2){
+                font-size: medium;
+                background-color: rgb(70, 72, 75);
+                color: white;
+            }
+            .btn button:hover{
+                cursor: pointer;
+                background-color: rgb(33, 184, 33);
+            }
+        </style>
+        <style>
+            @keyframes circle1{
+                from {
+                    margin-left: 350px;
+                    padding: 10px;
+                    /* padding-right: 161px; move-right */
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    background-color: rgb(233, 81, 16);
+                    border-radius: 100px;
+                }
+                to {
+                    margin-left: 350px;
+                    padding: 10px;
+                    padding-right: 161px; /* move-right */
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    background-color: rgb(233, 81, 16);;
+                    border-radius: 100px;
+                }
+            }
+            @keyframes circle2{
+                from {
+                    margin-left: 350px;
+                    margin-top: 90px;
+                    padding: 10px;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    background-color: rgb(79, 85, 48);
+                    border-radius: 100px;
+                }
+                to {
+                    margin-left: 350px;
+                    margin-top: -60px;
+                    padding: 10px;
+                    padding-top: 160px;
+                /* move-down */
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    background-color: rgb(72, 78, 36);
+                    border-radius: 100px;
+                }
+            }
+            @keyframes circle3{
+                from {
+                    margin-top: -210px;
+                    margin-left: 500px;
+                    padding: 10px;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    background-color: rgb(198, 250, 78);
+                    border-radius: 100px;
+                }
+                to {
+                    margin-top: -210px;
+                    margin-left: 500px;
+                    padding: 10px;
+                    padding-bottom: 161px;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    background-color: rgb(198, 250, 78);
+                    border-radius: 100px;
+                }
+            }
+            @keyframes circle4 {
+                from {
+                    margin-top: 91px;
+                    margin-left: 500px;
+                    padding: 10px;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    background-color: rgb(92, 169, 241);
+                    border-radius: 100px;
+                }
+                to {
+                    margin-top: -61px; /* move-down*/
+                    margin-left: 352px;
+                    padding: 10px;
+                    padding-left: 158px;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    background-color: rgb(92, 169, 241);
+                    border-radius: 100px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div id="c1"></div>
+            <div id="c2"></div>
+            <div id="c3"></div>
+            <div id="c4"></div>
+        </div>
+        <div class="btn">
+            <button type="button" onclick="start()">Start</button>
+            <button type="button" onclick="stop()">Stop</button>
+        </div>
+        <script>
+            let circle1 = document.getElementById('c1');
+            let circle2 = document.getElementById('c2');
+            let circle3 = document.getElementById('c3');
+            let circle4 = document.getElementById('c4');
+            function start(){
+                circle1.setAttribute('class', "circle1")
+                circle2.setAttribute('class', "circle2")
+                circle3.setAttribute('class', "circle3")
+                circle4.setAttribute('class', "circle4")
+            }
+            function stop(){
+                circle1.removeAttribute('class', "circle1")
+                circle2.removeAttribute('class', "circle2")
+                circle3.removeAttribute('class', "circle3")
+                circle4.removeAttribute('class', "circle4")
+            }
+        </script>
+    </body>
+</html>
